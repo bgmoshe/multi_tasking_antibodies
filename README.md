@@ -7,8 +7,9 @@ For any problems or questions regarding the code, please email barak_gross@mail.
 # Strcture
 The repository contains several folders:
 * data - contains two folders: modified and original. Original is the csv we pulled from other sources such as other studies, while modified contains aggregation of them in order to be able to read them more comfortably.
-* code - contains the needed code to run to produce the outputs for the #TODO: elaborate
+* code - contains the needed code to run to produce the outputs
 
 # How to Run
 
-TODO: Add snippet of example of running
+python main.py should create the various models for continuous multi task scenarios. Those models can be passed later on in order to explore and visualize the effects of teh embeddings. This script also create teh various ".pkl" file that contains the information to be unpacked from the data.
+How to read the ".pkl" and use the mebeddings can be seen in the jupyter notebook.
