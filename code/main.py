@@ -150,7 +150,7 @@ def get_data_w_bind(df,
       return seq
     mut_and_site = df[['site', 'mutation']]
     print(mut_and_site.head())
-    seq_wt = str(SeqIO.read('cov2_spike_wt.fasta', 'fasta').seq)
+    seq_wt = str(SeqIO.read(r'../data/original/cov2_spike_wt.fasta', 'fasta').seq)
     seq_wt = seq_wt[region[0]: region[1]+1]
     seq_wt = _featurize(seq_wt)
     vocabulary = get_vocab()
