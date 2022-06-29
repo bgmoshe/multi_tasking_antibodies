@@ -220,7 +220,7 @@ def get_data_w_bind_no_split(df,
       seq = np.array([vocabulary[word] for word in orig_seq])
       return seq
     mut_and_site = df[['site', 'mutation']]
-    seq_wt = str(SeqIO.read('cov2_spike_wt.fasta', 'fasta').seq)
+    seq_wt = str(SeqIO.read(r'../data/original/cov2_spike_wt.fasta', 'fasta').seq)
     seq_wt = seq_wt[region[0]: region[1]+1]
     seq_wt = _featurize(seq_wt)
     vocabulary = get_vocab()
@@ -357,7 +357,7 @@ def get_experiment_data_w_bind(num_of_iterations,
     print(f"Loss Weights = {loss_weights}")
     print(loss_weights)
   
-  seq_wt = str(SeqIO.read('cov2_spike_wt.fasta', 'fasta').seq)
+  seq_wt = str(SeqIO.read(r'../data/original/cov2_spike_wt.fasta', 'fasta').seq)
   variants = [[(501, "Y")],  # Alpha
               [(484, "K"), (501, "Y")],  # Alpha with E484K
               [(417, "N"), (484, "K"), (501, "Y")],  # Beta
