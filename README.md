@@ -11,5 +11,14 @@ The repository contains several folders:
 
 # How to Run
 
+First make sure the following are installed:
+* biopyton
+* keras
+* tensorflow
+* pandas
+* numpy
+* sklearn
+
 python main.py should create the various models for continuous multi task scenarios. Those models can be passed later on in order to explore and visualize the effects of teh embeddings. This script also create teh various ".pkl" file that contains the information to be unpacked from the data.
-How to read the ".pkl" and use the mebeddings can be seen in the jupyter notebook.
+How to read the ".pkl" and use the embeddings can be seen in the jupyter notebook.
+
